@@ -21,6 +21,8 @@ export default {
         acTxt: "#9AA5B1",
         overlay: "#6c757d, rgba(0,0,0,0.5)",
         overlayTwo: "#00000066",
+        dColor: "#FA3E2C",
+        tBtnBg: "#28b0a714",
       },
       // Color End
       // Max whdth Start

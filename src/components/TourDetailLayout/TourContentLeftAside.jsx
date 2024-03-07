@@ -17,7 +17,7 @@ const TourContentLeftAside = () => {
   //   let cartData = data.allData.data;
 
   return (
-    <div className="w-[798px] mt-16">
+    <div className="w-[798px]">
       <Flex className="justify-between mb-5">
         <Heading
           text="Sandy beach holiday in Lagos"
@@ -46,9 +46,13 @@ const TourContentLeftAside = () => {
       </Flex>
 
       <div>
-        <Flex className='items-center border-b border-solid border-acBdr pb-4'>
+        <Flex className="items-center border-b border-solid border-acBdr pb-4">
           <Image src={cstar} />
-          <Heading text="6,788 Reviews" as="h3" className="text-bdrColor font-pop font-medium text-base" />
+          <Heading
+            text="6,788 Reviews"
+            as="h3"
+            className="text-bdrColor font-pop font-medium text-base"
+          />
         </Flex>
       </div>
     </div>

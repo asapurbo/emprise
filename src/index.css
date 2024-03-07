@@ -37,3 +37,7 @@
   background: linear-gradient(transparent, #878686);
   border-radius: 7px;
 }
+
+.formBtn {
+  background: linear-gradient(90deg, #ff9d4b 0%, #fa126c 100%);
+}

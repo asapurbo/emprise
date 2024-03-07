@@ -7,7 +7,7 @@ import Heading from "../commonComponents/Heading";
 const TourBenefitItem = ({type, text}) => {
     console.log(type);
   return (
-    <Flex className='gap-x-2 items-center'>
+    <Flex className='gap-x-2 items-center pt-7'>
         <div>
             <Image src={type ? cr : cl} alt="image"/>
         </div>
