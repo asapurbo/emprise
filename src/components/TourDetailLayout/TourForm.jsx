@@ -9,17 +9,18 @@ import { useDispatch, useSelector } from "react-redux";
 import { decrement, increment } from "../../features/counterSlice";
 const TourForm = () => {
   const [date, setDate] = useState(null);
-  const data = useSelector((state) => state.count.value);
+  const data = useSelector((state) => state);
+
   const dispatch = useDispatch()
   return (
     <div>
       <div>
-        <del className="font-pop text-sm font-medium text-dColor">£2469</del>
+        <del className="font-pop text-sm font-medium text-dColor">{data.imageData.imgData[0].price}</del>
       </div>
       <Flex className="items-center justify-between mt-4">
         <Flex className="items-center gap-x-2">
           <Heading
-            text="£1759"
+            text="£759"
             as="h3"
             className="font-pop font-bold text-4xl text-primaryColor"
           />
@@ -77,7 +78,7 @@ const TourForm = () => {
                 <CiCircleMinus className="text-2xl text-bdrColor" />
               </div>
               <span className="text-black font-pop font-semibold text-lg">
-                {data}
+                {data.count.value}
               </span>
               <div onClick={() => dispatch(increment())} className="cursor-pointer">
                 <CiCirclePlus className="text-2xl text-bdrColor" />
